@@ -11,7 +11,6 @@ export async function getServerSideProps() {
 	try {
 		const response = await fetch(url, options);
 		const result = await response.json();
-		console.log(result);
 		return { props: { result } }
 	} catch (error) {
 		console.error(error);
@@ -22,7 +21,6 @@ export async function getServerSideProps() {
 
 export default function Home({result}) {
 
-	console.log(result);
 	
   return (
     <center className="py-[35px] flex flex-col justify-between items-center">

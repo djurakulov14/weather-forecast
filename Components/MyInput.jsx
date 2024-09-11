@@ -5,9 +5,9 @@ import { FaMicrophone } from "react-icons/fa";
 const MyInput = (props) => {
   return (
     <div className=' p-4 bg-white rounded-2xl w-[80%] m-auto flex justify-between' >
-        <CiSearch size={20}/>
+        <CiSearch size={20} color='black'/>
         <input {...props} className=' outline-0' placeholder='Search here' type='search'/>
-        <FaMicrophone size={20}/>
+        <FaMicrophone size={20} color='black'/>
     </div>
   )
 }
