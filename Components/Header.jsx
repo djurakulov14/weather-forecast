@@ -1,10 +1,10 @@
 import React from 'react'
 import MyInput from './MyInput'
 
-const Header = () => {
+const Header = ({query, setQuery}) => {
   return (
-    <header className='w-full'>
-        <MyInput/>
+    <header className='w-full text-black'>
+        <MyInput query={query} setQuery={setQuery}/>
     </header>
   )
 }

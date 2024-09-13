@@ -19,19 +19,19 @@ const Info = ({result}) => {
     <div className=' flex flex-col justify-between items-center text-white bg-[#ffffff30] w-[80%] py-5 rounded-[20px] border-2 border-[#BFBFBFB2]'>
         <Link href={'/forecast'}>
             <h2 className=' shadow1 text-lg'>Today, {day} {monthNames[month]}</h2>
-            <h1 className=' shadow2 text-[100px]'>{result.current.temperature}°</h1>
+            <h1 className=' shadow2 text-[100px]'>{result?.current?.temperature}°</h1>
             <div className="bot">
                 <div className="top flex items-center text-lg gap-[20px]">
                     <PiWind/>
                     <span>Wind</span>
                     <div className="line w-[2px] h-full bg-[#BFBFBFB2]"> </div>
-                    <span>{result.current.wind_speed} km/h</span>
+                    <span>{result?.current?.wind_speed} km/h</span>
                 </div>
                 <div className="top flex items-center text-lg gap-[20px]">
                     <RiDropLine/>
                     <span>Hum</span>
                     <div className="line w-[2px] h-full bg-[#BFBFBFB2]"> </div>
-                    <span>{result.current.humidity} %</span>
+                    <span>{result?.current?.humidity} %</span>
                 </div>
             </div>
         </Link>

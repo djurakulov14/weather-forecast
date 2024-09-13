@@ -5,17 +5,12 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.worldweatheronline.com',
+        hostname: "cdn.worldweatheronline.com",
         port: '',
-        pathname: '',
-      },
-    ],
-  },
-  // images: {
-  //   // remotePatterns: ["https://cdn.worldweatheronline.com"]
-  //   remotePatterns: ["https://cdn.worldweatheronline.com"]
-  // },
-  
+        pathname: "/images/**"
+      }
+    ]
+  }
 };
 
 export default nextConfig;
