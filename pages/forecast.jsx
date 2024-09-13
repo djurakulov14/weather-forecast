@@ -5,23 +5,23 @@ import React from 'react'
 import { IoIosArrowBack } from "react-icons/io";
 import { IoMdCalendar } from "react-icons/io";
 
-export async function getServerSideProps() {
-    const url = 'https://api.weatherstack.com/forecast?access_key=5cd7099ac722fef06fe81c92768200e4&query=Samarqand&historical_date_start=2024-09-04&historical_date_end=2024-09-10';
-    const options = {
-        method: 'GET'
-    };
+// export async function getServerSideProps() {
+//     const url = 'https://api.weatherstack.com/forecast?access_key=5cd7099ac722fef06fe81c92768200e4&query=Samarqand&historical_date_start=2024-09-04&historical_date_end=2024-09-10';
+//     const options = {
+//         method: 'GET'
+//     };
 
-	try {
-		const response = await fetch(url, options);
-		const result = await response.json();
-		return { props: { result } }
-	} catch (error) {
-		console.error(error);
-	}
+// 	try {
+// 		const response = await fetch(url, options);
+// 		const result = await response.json();
+// 		return { props: { result } }
+// 	} catch (error) {
+// 		console.error(error);
+// 	}
 
-}
+// }
 
-const forecast = ({result}) => {
+const Forecast = ({result}) => {
 
     console.log(result);
     
@@ -74,4 +74,4 @@ const forecast = ({result}) => {
   )
 }
 
-export default forecast
+export default Forecast
